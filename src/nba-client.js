@@ -8,7 +8,7 @@ export default {
         playerInfo: function({ PlayerID }) {
             return fetch(`${SERVER_URL}/players/${PlayerID}`).then(res => res.json())
         },
-        shots: function({ PlayerID }) {
+        shot: function({ PlayerID }) {
             return fetch(`${SERVER_URL}/players/${PlayerID}/shots`).then(res => res.json())
         },
     },
